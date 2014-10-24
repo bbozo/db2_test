@@ -1,7 +1,7 @@
 # https://github.com/jruby/activerecord-jdbc-adapter
 
 default: &default
-  adapter: jdbc
+  adapter: db2
   #jdbc_url: jdbc:db2j:net://localhost:50000/BBOZO
   url: jdbc:db2://localhost:50000/BBOZO
   driver: com.ibm.db2.jcc.DB2Driver
@@ -9,7 +9,6 @@ default: &default
   encoding: unicode
   #host: localhost
   #port: 50000
-  connection_alive_sql: SELECT 1 FROM sysibm.tables FETCH FIRST 1 ROWS ONLY
 
 development:
   username: username
